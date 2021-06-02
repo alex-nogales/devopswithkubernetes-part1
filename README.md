@@ -44,3 +44,15 @@ Create a deployment for your project.
 You won't have access to the port yet but that'll come soon.
 
 > Done
+
+# Introduction to Debugging
+## Learning Objectives
+After this section you
+- can start debugging when something doesn't work
+- know to use Lens to explore Kubernetes resources
+
+# Introduction to Networking
+## Learning Objectives
+After this section you
+- are able to use Services to access applications from outside of the cluster
+- are able to use Ingresses to access applications from outside of the cluster
