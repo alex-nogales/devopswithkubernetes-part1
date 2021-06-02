@@ -62,3 +62,9 @@ Have the project respond something to a GET request sent to the project. A simpl
 Use `kubectl port-forward` to confirm that the project is accessible and works in the cluster by using a browser to access the project.
 
 > Done
+
+## Exercise 1.06: Project v0.4
+
+Use a NodePort Service to enable access to the project.
+
+> Done
