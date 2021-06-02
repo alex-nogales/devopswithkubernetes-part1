@@ -32,3 +32,15 @@ Let's get started!
 Create a web server that outputs "Server started in port NNNN" when it's started and deploy it into your Kubernetes cluster. You won't have access to the port yet but that'll come soon.
 
 > Done
+
+## Exercise 1.03: Declarative approach
+In your "main application" create the folder for manifests and move your deployment into a declarative file.
+Make sure everything still works by restarting and following logs.
+
+> Done
+
+## Exercise 1.04: Project v0.2
+Create a deployment for your project.
+You won't have access to the port yet but that'll come soon.
+
+> Done
