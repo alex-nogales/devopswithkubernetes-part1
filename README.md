@@ -79,4 +79,18 @@ You can just store the string and timestamp to the memory.
 ## Exercise 1.08: Project v0.5
 Switch to using Ingress instead of NodePort to access the project. You can delete the ingress of the "main application" so they don't interfere with this exercise. We'll look more into paths and routing in the next exercise and at that point you can configure project to run with the main application side by side.
 
+> project at rndmz/smallapp
+> Done
+
+## Exercise 1.09: More services
+Develop a second application that simply responds with "pong 0" to a GET request and increases a counter (the 0) so that you can see how many requests have been sent. The counter should be in memory so it may reset at some point. Create a new deployment for it and have it share ingress with "main application" just route requests directed '/pingpong' to it.
+In future exercises, this second application will be referred to as "ping/pong application"
+This is not required, but you can add the following annotation to your ingress so that the path in ingress is stripped from the request. This'll allow you to use "/pingpong" path whilst the ping-pong application listens on "/":
+
+```
+> metadata:
+>  annotations:
+>    traefik.ingress.kubernetes.io/rule-type: "PathPrefixStrip"
+```
+> 'main app' at rndmz/mainapp
 > Done
