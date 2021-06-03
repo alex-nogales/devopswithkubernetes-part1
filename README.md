@@ -88,9 +88,9 @@ In future exercises, this second application will be referred to as "ping/pong a
 This is not required, but you can add the following annotation to your ingress so that the path in ingress is stripped from the request. This'll allow you to use "/pingpong" path whilst the ping-pong application listens on "/":
 
 ```
-> metadata:
->  annotations:
->    traefik.ingress.kubernetes.io/rule-type: "PathPrefixStrip"
+ metadata:
+  annotations:
+    traefik.ingress.kubernetes.io/rule-type: "PathPrefixStrip"
 ```
 > 'main app' at rndmz/mainapp
 > Done
