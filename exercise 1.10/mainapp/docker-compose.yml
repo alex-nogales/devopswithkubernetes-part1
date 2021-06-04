@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+    01_mainapp:
+        image: rndmz/01_mainapp
+        container_name: 01_mainapp
+        volumes:
+            - ./test.txt:/usr/src/test.txt
+    02_mainapp:
+        image: rndmz/02_mainapp
+        container_name: 02_mainapp
+        ports:
+            - 3000:3000
+        volumes:
+            - ./test.txt:/usr/src/test.txt
+        depends_on: 
+            - 01_mainapp

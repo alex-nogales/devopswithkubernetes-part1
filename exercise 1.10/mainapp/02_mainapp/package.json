@@ -1,0 +1,15 @@
+{
+  "name": "02_mainapp",
+  "version": "1.0.0",
+  "description": "This app will read the file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Nogales",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

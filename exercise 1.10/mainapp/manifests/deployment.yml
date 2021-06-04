@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mainappv2-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mainapp
+  template:
+    metadata:
+      labels:
+        app: mainapp
+    spec:
+      volumes:
+        - name: shared-dir
+          emptyDir: {}
+      containers:
+        - name: 01mainapp
+          image: rndmz/01_mainapp
+          volumeMounts: 
+          - name: shared-dir
+            mountPath: /usr/src/app/files
+        - name: 02mainapp
+          image: rndmz/02_mainapp
+          volumeMounts:
+          - name: shared-dir
+            mountPath: /usr/src/app/files
+        

@@ -94,3 +94,22 @@ This is not required, but you can add the following annotation to your ingress s
 ```
 > 'main app' at rndmz/mainapp
 > Done
+
+# Introduction to Storage
+**Learning Objectives**
+After this section you
+- are able to use volumes to share data between two containers in a pod
+- know about persistent volumes to store data on the disk of a node
+
+## Exercise 1.10: Even more services
+Split the main application into two different containers within a single pod:
+One generates a new timestamp every 5 seconds and saves it into a file. The other reads that file and outputs it with its hash for the user to see.
+
+```
+exercise 1.10
+-> mainapp
+  -> 01_mainapp: The app one who creates de file
+  -> 02_mainapp: The one that publishes the file output
+```
+> Done
+
