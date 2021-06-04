@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smallapp-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smallapp
+  template:
+    metadata:
+      labels:
+        app: smallapp
+    spec:
+      volumes:
+        - name: shared-dir
+          emptyDir: {}
+      containers:
+        - name: smallapp
+          image: rndmz/smallapp
+          volumeMounts:
+          - name: shared-dir
+            mountPath: /usr/src/app/files
