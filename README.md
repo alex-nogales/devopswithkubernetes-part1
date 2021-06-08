@@ -139,8 +139,8 @@ Maybe something similar to this:
 ![TODO-ideal](https://devopswithkubernetes.com/static/ff807ebf379aa4fd08d98d96b03d969c/9f933/project-ex-113.png)
 
 > Done
-> The code for the project is at: [ToDo app](https://github.com/rndmz451/devopswithkubernetes-todo-app)
-> The usage of this deployment is:
+>> The code for the project is at: [ToDo app](https://github.com/rndmz451/devopswithkubernetes-todo-app)
+>> The usage of this deployment is:
 ```
 kubectl apply -f manifests/service.yml
 kubectl apply -f manifests/ingress.yml
