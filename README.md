@@ -140,6 +140,7 @@ Maybe something similar to this:
 
 > Done
 >> The code for the project is at: [ToDo app](https://github.com/rndmz451/devopswithkubernetes-todo-app)
+
 >> The usage of this deployment is:
 ```
 kubectl apply -f manifests/service.yml
