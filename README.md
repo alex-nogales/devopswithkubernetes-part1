@@ -128,3 +128,23 @@ A daily image where every day a new image is fetched on the first request.
 Get an image from Lorem Picsum like `https://picsum.photos/1200` and display it in the project. Make sure to cache the image into a volume so we don't spam the API for new images every time we access the application or the container crashes.
 
 > Done
+
+## Exercise 1.13: Project v0.7
+For the project we'll need to do some coding to start seeing results in the next part.
+Add an input field. The input should not take todos that are over 140 characters long.
+Add a send button. It does not have to send the todo yet.
+Add a list for the existing todos with some hardcoded todos.
+Maybe something similar to this:
+
+![TODO-ideal](https://devopswithkubernetes.com/static/ff807ebf379aa4fd08d98d96b03d969c/9f933/project-ex-113.png)
+
+> Done
+> The code for the project is at: [ToDo app](https://github.com/rndmz451/devopswithkubernetes-todo-app)
+> The usage of this deployment is:
+```
+kubectl apply -f manifests/service.yml
+kubectl apply -f manifests/ingress.yml
+kubectl apply -f manifests/deployment.yml
+
+Then visit localhost:8081
+```
